@@ -5,4 +5,6 @@ export default class ProductService {
   private model = new ProductModel();
 
   public create = async (user: ForCreateProduct): Promise<Product> => this.model.create(user);
+
+  public getAll = async (): Promise<Product[]> => this.model.getAll();
 }
